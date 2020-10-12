@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Warna</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .iadong {
+            background-color: lightblue;
+        }
+
+        .kotak{
+            
+            width: 25px;
+            height: 25px;
+            margin: 10px auto;
+        }
+        .merah{
+            background-color: red;
+        }
+        .hijau{
+            background-color: green;
+        }
+
+        .biru{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <button type="button">Ubah Warna</button>
+    <br><br>
+
+    <!-- merah -->
+    <div class="kotak merah"></div>
+    <input type="range" name="sMerah" min="0" max="255">
+
+    <!-- hijau -->
+    <div class="kotak hijau"></div>
+    <input type="range" name="sHijau" min="0" max="255">
+
+    <div class="kotak biru"></div>
+    <input type="range" name="sBiru" min="0" max="255">
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

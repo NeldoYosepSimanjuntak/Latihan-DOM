@@ -43,11 +43,6 @@ uji.classList.add('empat');
 
 //melihat/mengecek sebuah kelas
 
-// 
-
-
-
-
 
 
 
