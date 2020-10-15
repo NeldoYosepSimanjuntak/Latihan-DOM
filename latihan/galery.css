@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+body{
+    text-align: center;
+    font-family: 'roboto', arial;
+    background-color: grey;
+    margin: 40px auto;
+}
+
+.container{
+    width: 600px;
+    margin: 50px auto;
+    border: 5px solid blue;
+    
+}
+.thumbnail{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thumb{
+    width: 200px;
+    cursor: pointer;
+}
+.thumb:hover{
+    opacity: 0.5;
+}
+
+/* membuat animasi */
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+.olo{
+    opacity: 0;
+    animation: fadeIn 0.5 forwards;
+}
+
+.active{
+    opacity: 0.5;
+}

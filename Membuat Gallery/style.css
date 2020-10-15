@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+body{
+    font-family: arial;
+    text-align: center;
+    margin: 40px auto;
+    background-color: grey;
+}
+.container{
+   width: 600px;
+   margin: 50px auto;
+   border: 5px solid blue;
+   
+}
+
+.thumbnail{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thumb{
+    width: 200px;
+    border: 2px solid lightblue;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.thumb:hover{
+    opacity: 0.5;
+}
+
+/* membuat animasi */
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+    
+}
+
+/* membuat sebuah kelas */
+.fade{
+    opacity: 0;
+    /* animasi ini berjalan 0.5 detik */
+    /* forwards untuk animasi berhenti di akhir */
+    animation: fadeIn 0.5 forwards;
+}
+
+.active{
+    opacity: 0.5;
+}
